@@ -21,6 +21,50 @@
 	    padding-right: 10%;
     }
 
+		#footer {
+			font-size: 20px;
+
+		}
+
+			#map {
+				width: 100%;
+			}
+
+			#footer-grid-1 {
+				color: white;
+				margin-bottom: 10%;
+				border-style: solid;
+				border-width: 1px;
+				border-color: white;
+				padding-top: 10%;
+				padding-bottom: 10%;
+			}
+
+		@media all and (min-width:768px) {
+			#footer-grid {
+				padding:0px;
+
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				line-height :40px;
+			}
+
+			#map {
+				width: 80%;
+			}
+
+			#footer-grid-1 {
+				margin-bottom: 0%;
+				margin-left: 10%;
+				margin-right: 10%;
+				border-style: solid;
+				border-width: 1px;
+				border-color: white;
+				padding-top: 10%;
+				padding-bottom: 10%;
+			}
+		}
+
 	}
 
 	#three {
@@ -60,14 +104,18 @@
 					<header class="align-center">
 						<p>PHILOSOPHY OF YLANG AESTHETIC</p>
 						<h2>일랑의 철학</h2>
-						<span>나만을 위한 시간, 공간.<br><br>
-						저희 샵에 들어오셔서 나갈 때 까지<br>
-						오직 고객님 자신에게 집중할 수 있는 시간과<br>미적 만족을 드립니다.<br><br>
-
-						프랑의 모든 프로그램은 기성화된 프로그램이 아닌,<br>
-						1대1 고객 맞춤, 고객 우선 서비스입니다.<br><br>
-
-						고객님의 문제점을 확실히 파악하고 바로 개선해드립니다.<br><br></span>
+						<span>나만을 위한 시간, 공간.<br>
+						<br>
+						바쁜 일상을 보내느라,<br>
+						나를 돌아보지 못하고 지내는 고객분들께<br>
+						자신만을 위한 공간을 만들어 드리고자<br>
+						‘일랑에스테틱’을 만들었습니다.<br>
+						<br>
+						샵에 들어오셔서 나갈 때까지 나에게 집중하여<br>
+						즐거움을 느끼고, 아름다움을 가꾸어<br>
+						‘꽃중의 꽃’으로 만들어 드리고자 합니다.<br>
+						<br>
+						고객님의 소중한 시간, 비용을 지켜드립니다.<br><br></span>
 					</header>
 				</div>
 			</section>
@@ -97,26 +145,35 @@
 
 						</div>
 						<div class="image fit" id="profile">
-							<a href="#"><img src="images/profile.png" alt="" /></a>
+							<a href="#"><img src="images/profile.jpg" alt="" /></a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. All rights reserved.
-				</div>
-			</footer>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div id="footer-grid">
+
+							<div id="footer-grid-1">
+								CONTACT / ADDRESS<br><br>
+								<a href="https://www.instagram.com/ylang_aesthetic/" class="icon fa-instagram"><span class="label">인스타그램</span><span>&nbsp @ylang_aesthetic</span></a><br>
+								<a href="tel:010-8822-9947" class="icon fa-phone"><span class="label">전화</span><span>&nbsp 010-8822-9947</span></a><br>
+								<a href="http://naver.me/5Pi1Xv6w" class="icon fa-map-marker"><span class="label">지도</span><span>&nbsp 서울 성북구 종암로24길 35 203호</span></a>
+							</div>
+
+							<div>
+								<a href="http://naver.me/5Pi1Xv6w"><img id="map" src="images/map.png"></a><br>
+							</div>
+
+						</div>
+						<br>
+					</div>
+					<div class="copyright">
+						&copy; 일랑에스테틱. All rights reserved.
+					</div>
+				</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
